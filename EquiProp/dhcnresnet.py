@@ -14,7 +14,7 @@ from training.monitor import Monitor, Optimizer,adamOptimizer
 parser = argparse.ArgumentParser(description='Best results obtained with a deep convolutional Hopfield network')
 parser.add_argument('--dataset', type = str, default = 'FashionMNIST',choices=['CIFAR10', 'CIFAR100','FashionMNIST'], help="The dataset used for training. Either 'CIFAR10' or 'CIFAR100' or 'FashionMNIST'")
 parser.add_argument('--epochs', type = int, default = 100, help="The number of epochs of training")
-parser.add_argument('--activation', type = str, default = 'relu6', choices=['hard-sigmoid', 'relu6', 'relu', 'reluclip'], help="The activation function. Either 'hard-sigmoid', 'relu6', 'relu' or 'reluclip'")
+parser.add_argument('--activation', type = str, default = 'relu6', choices=['hard-sigmoid', 'relu6',  'reluclip'], help="The activation function. Either 'hard-sigmoid', 'relu6' or 'reluclip'")
 parser.add_argument('--lossfn', type = str, default = 'MSE', choices=['MSE', 'CE'], help="The loss function. Either 'MSE' (mean squared error) or 'CE' (cross-entropy)")
 parser.add_argument('--optimizer', type = str, default = 'sgd',choices=['sgd', 'adam'], help="The optimizer. Either 'sgd' (NAG) or 'adam' (with adam use learning rate 1e-4)")
 parser.add_argument('--use_warm_restarts', action='store_true',default=False, help="If set, use cosine annealing with warm restarts as a scheduler for the learning rates else use standard cosine annealing")
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = True
     dataset = args.dataset
     use_warm_restarts=False 
-    activation=args.activation  #hard-sigmoid, relu6, relu, reluclip
+    activation=args.activation  #hard-sigmoid, relu6,  reluclip
     opt=args.optimizer #sgd or adam
     lossfn= args.lossfn #MSE or CE
     momentum = args.momentum
