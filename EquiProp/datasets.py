@@ -98,14 +98,12 @@ def load_cifar10(normalize=True):
     else:
         final_transform = torchvision.transforms.Lambda(lambda x: x)
 
-
+    #modified augmentation
     train_transform = torchvision.transforms.Compose([
         torchvision.transforms.RandomHorizontalFlip(0.5),
         torchvision.transforms.RandAugment(num_ops=3, magnitude=9),
         torchvision.transforms.RandomCrop(size=[32,32], padding=4, padding_mode='edge'),
-        
         torchvision.transforms.ToTensor(),
-        # AddGaussianNoise(mean=0.0, std=0.05),
         final_transform
     ])
 
@@ -151,7 +149,7 @@ def load_cifar100(normalize=True):
         final_transform = torchvision.transforms.Normalize(mean, std)
     else:
         final_transform = torchvision.transforms.Lambda(lambda x: x)
-
+    #modified augmentation
     train_transform = torchvision.transforms.Compose([
         torchvision.transforms.RandomHorizontalFlip(0.5),
 
