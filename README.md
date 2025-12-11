@@ -51,3 +51,16 @@ python EquEquiProp/dhcnresnet.py --dataset CIFAR10 --epochs 300
 
 ---
 
+If anyone want to use the code pleae cite our work,
+
+```
+@misc{scalingequilibriumpropagationdeeper,
+      title={Scaling Equilibrium Propagation to Deeper Neural Network Architectures}, 
+      author={Sankar Vinayak Elayedam and Gopalakrishnan Srinivasan},
+      year={2025},
+      eprint={2509.26003},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE},
+      url={https://arxiv.org/abs/2509.26003}, 
+}
+```
