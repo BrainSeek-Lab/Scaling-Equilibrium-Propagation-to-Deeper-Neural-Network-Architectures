@@ -51,7 +51,7 @@ python EquEquiProp/dhcnresnet.py --dataset CIFAR10 --epochs 300
 
 ---
 
-If anyone want to use the code pleae cite our work,
+cite our work
 
 ```
 @misc{scalingequilibriumpropagationdeeper,
