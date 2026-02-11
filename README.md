@@ -1,5 +1,5 @@
 # Scaling-Equilibrium-Propagation-to-Deeper-Neural-Network-Architectures
-This repo contains the code experimets relating to the paper "Scaling Equilibrium Propagation to Deeper Neural Network Architectures" 
+This repo contains the code experimets relating to the paper "Scaling Equilibrium Propagation to Deeper Neural Network Architectures" Presented at ICEdge Conference 2025, on Dec 2025 at IISc Bangalore
 
 This code is based on the [rain-neuromorphics](https://github.com/rain-neuromorphics/energy-based-learning/tree/main) implementation of Centered Equilibrium Propagation, with changes made to support the experiments in this project.
 
