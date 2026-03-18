@@ -55,13 +55,15 @@ python EquEquiProp/dhcnresnet.py --dataset CIFAR10 --epochs 300
 If you find this repository and code useful for your research, please use the following BibTex to cite our work
 
 ```
-@misc{scalingequilibriumpropagationdeeper,
-      title={Scaling Equilibrium Propagation to Deeper Neural Network Architectures}, 
-      author={Sankar Vinayak E P and Gopalakrishnan Srinivasan},
-      year={2025},
-      eprint={2509.26003},
-      archivePrefix={arXiv},
-      primaryClass={cs.NE},
-      url={https://arxiv.org/abs/2509.26003}, 
-}
+@INPROCEEDINGS{11412472,
+  author={E P, Sankar Vinayak and Srinivasan, Gopalakrishnan},
+  booktitle={2025 First International Conference on Intelligent Computing and Systems at the Edge (ICEdge)}, 
+  title={Scaling Equilibrium Propagation to Deeper Neural Network Architectures}, 
+  year={2025},
+  volume={1},
+  number={},
+  pages={1-7},
+  keywords={Training;Backpropagation;Convolutional codes;Accuracy;Source coding;Hopfield neural networks;Computer architecture;Parallel processing;Hardware;Optimization},
+  doi={10.1109/ICEdge67252.2025.11412472}}
+
 ```
